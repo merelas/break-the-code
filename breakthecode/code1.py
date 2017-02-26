@@ -11,8 +11,8 @@ __email__ = "daniel@merelas.es"
 
 # Bangalore, India
 # 2017/02/25
-# Solución al ejercicio propuesto por la central de intelegencia americana
-# https://www.cia.gov/kids-page/games/break-the-code/code-1.html
+# Automated solution for the game for kids called "break the code" offered by CIA (Central Intelligence Agency)
+# https://www.cia.gov/kids-page/games/break-the-code/code-2.html
 
 
 def ciacode1():
