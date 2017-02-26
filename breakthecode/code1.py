@@ -33,7 +33,6 @@ def ciacode1():
             continue
 
         temp = 25 - number[pos]
-        #temp %= 25
         plaintext += abc[temp]
 
     textentry.insert(1, plaintext)
