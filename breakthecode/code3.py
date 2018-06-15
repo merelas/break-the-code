@@ -34,6 +34,31 @@ def ciacode3():
     textentry.insert(1, plaintext)
     return
 
+  plaintext = str.lower(textentry.get())
+    key = int(keyentry.get())
+
+    cipherentry.delete(0, END)
+    ciphertext = ''
+
+    abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+           'v', 'w', 'x', 'y', 'z', ' ']
+    number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+
+    for i in plaintext:
+        pos = abc.index(i)
+        
+        if pos == 26:
+            ciphertext += ' '
+            continue
+            
+        temp = number[pos] + key
+        temp %= 25
+        ciphertext += abc[temp]
+
+    cipherentry.insert(1, ciphertext)
+    return
+
+
 
 # Window instance
 window = Tk()
